@@ -3,11 +3,13 @@ package Pages;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import BaseLibrary.Base;
+import io.github.sukgu.Shadow;
 
 public class Signin extends Base
 {
@@ -26,6 +28,9 @@ public class Signin extends Base
 	
 	@FindBy(xpath="//*[@type='submit']")
 	private WebElement login;
+	
+	@FindBy(xpath="(//*[@class='hydrated'])[2]")
+	private WebElement Signin;
 	
 	
 	public void Login()
@@ -60,7 +65,18 @@ public class Signin extends Base
 			Thread.sleep(2000);
             driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
             Thread.sleep(10000);
-            driver.close();
+            Signin.click();
+            
+            
+//            Shadow shadow = new Shadow(driver);
+//            WebElement element = shadow.findElement("");
+            
+//            JavascriptExecutor jse=(JavascriptExecutor)driver;
+//            WebElement element = (WebElement)jse.executeScript("document.querySelector(\"body > app > ng-component > div > div > div.container-fluid.app-container.px-0 > div > ghr-home > div.page.page-home.ng-star-inserted > div > gt-home-dashboard > div > div:nth-child(2) > gt-component-loader > gt-attendance-info > div > div > div.btn-container.mt-3x.flex.flex-row-reverse.justify-between.ng-star-inserted > gt-button:nth-child(1)\").shadowRoot.querySelector(\"button\")");
+//            String js ="arguments[0].setAttributes('value','')";
+//            jse.executeScript(js, element);
+            
+         //   driver.close();
 
            
             
