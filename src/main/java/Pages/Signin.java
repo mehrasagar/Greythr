@@ -20,11 +20,11 @@ public class Signin extends Base
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//*[@class='mb-7 text-6gpx']")
-	private WebElement username;
-	
-	@FindBy(xpath="//*[@class='mb-2 text-6gpx']")
-	private WebElement password;
+//	@FindBy(xpath="//*[@class='mb-7 text-6gpx']")
+//	private WebElement username;
+//	
+//	@FindBy(xpath="//*[@class='mb-2 text-6gpx']")
+//	private WebElement password;
 	
 	@FindBy(xpath="//*[@type='submit']")
 	private WebElement login;
@@ -59,7 +59,7 @@ public class Signin extends Base
 
 			driver.findElement(By.xpath("//*[@name='username']")).sendKeys("11000834");
 			Thread.sleep(2000);
-			driver.findElement(By.xpath("//*[@name='password']")).sendKeys("Admin@2022");;
+			driver.findElement(By.xpath("//*[@name='password']")).sendKeys("Admin@2022");
 			Thread.sleep(2000);
 			login.click();
 			Thread.sleep(2000);
@@ -76,7 +76,7 @@ public class Signin extends Base
 //            String js ="arguments[0].setAttributes('value','')";
 //            jse.executeScript(js, element);
             
-         //   driver.close();
+            // driver.close();
 
            
             

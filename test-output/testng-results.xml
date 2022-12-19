@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-17T17:50:10 IST" name="Suite" finished-at="2022-11-17T17:50:53 IST" duration-ms="42588">
+  <suite started-at="2022-12-09T09:22:38 IST" name="Suite" finished-at="2022-12-09T09:22:58 IST" duration-ms="20601">
     <groups>
     </groups>
-    <test started-at="2022-11-17T17:50:10 IST" name="Test" finished-at="2022-11-17T17:50:53 IST" duration-ms="42588">
+    <test started-at="2022-12-09T09:22:38 IST" name="Test" finished-at="2022-12-09T09:22:58 IST" duration-ms="20601">
       <class name="Test.SigninTest">
-        <test-method is-config="true" signature="getlaunch()[pri:0, instance:Test.SigninTest@76494737]" started-at="2022-11-17T17:50:10 IST" name="getlaunch" finished-at="2022-11-17T17:50:22 IST" duration-ms="11753" status="PASS">
+        <test-method is-config="true" signature="getlaunch()[pri:0, instance:Test.SigninTest@76494737]" started-at="2022-12-09T09:22:38 IST" name="getlaunch" finished-at="2022-12-09T09:22:49 IST" duration-ms="11072" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getlaunch -->
-        <test-method signature="getSignme()[pri:0, instance:Test.SigninTest@76494737]" started-at="2022-11-17T17:50:22 IST" name="getSignme" finished-at="2022-11-17T17:50:53 IST" duration-ms="30762" status="PASS">
+        <test-method signature="getSignme()[pri:0, instance:Test.SigninTest@76494737]" started-at="2022-12-09T09:22:49 IST" name="getSignme" finished-at="2022-12-09T09:22:58 IST" duration-ms="9452" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSignme -->
