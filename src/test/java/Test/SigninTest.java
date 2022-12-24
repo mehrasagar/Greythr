@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 
 import BaseLibrary.Base;
 import Pages.Signin;
+import Propertyfile.Propertyfile;
 
 public class SigninTest extends Base
 {
@@ -16,7 +17,7 @@ public class SigninTest extends Base
 		
 		try 
 		{
-			getlaunch("https://alphacodes.greythr.com/uas/portal/auth/login");
+			getlaunch(Propertyfile.Getpropertyvalue("url"));
 			ob=new Signin();
 			
 		

@@ -9,6 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import BaseLibrary.Base;
+import Propertyfile.Propertyfile;
 import io.github.sukgu.Shadow;
 
 public class Signin extends Base
@@ -57,9 +58,9 @@ public class Signin extends Base
 		{
 			Thread.sleep(6000);
 
-			driver.findElement(By.xpath("//*[@name='username']")).sendKeys("11000834");
+			driver.findElement(By.xpath("//*[@name='username']")).sendKeys(Propertyfile.Getpropertyvalue("username"));
 			Thread.sleep(2000);
-			driver.findElement(By.xpath("//*[@name='password']")).sendKeys("Admin@2022");
+			driver.findElement(By.xpath("//*[@name='password']")).sendKeys(Propertyfile.Getpropertyvalue("pwd"));
 			Thread.sleep(2000);
 			login.click();
 			Thread.sleep(2000);
