@@ -40,10 +40,8 @@ public class Signin extends Base
 		{
 			System.out.println("Launching the browser");
             driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-
-
-           
             
+
 		}
 	
 		catch (Exception e) 
